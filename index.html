@@ -1734,14 +1734,22 @@
       padding: 11px 18px;
       border-radius: var(--radius-sm);
       background: var(--color-title);
-      color: #FFFFFF;
+      color: var(--bg);
       font-weight: 700;
-      font-size: 14px;
-      transition: background-color 0.2s ease, transform 0.2s ease;
+      font-size: 16px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-title);
+      cursor: pointer;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     }
 
     .footer-newsletter-btn:hover {
       background: var(--mp-coral);
+      border-color: var(--mp-coral);
+      color: #FFFFFF;
       transform: translateX(2px);
     }
 
@@ -1974,31 +1982,6 @@
 
   <div class="floating-keyword-tag" id="floatingTag">#AI-Automation</div>
 
-  <div class="top-marquee-bar" onclick="window.location.href='#contact'">
-    <div class="marquee-track">
-      <div class="marquee-item">
-        <span class="marquee-tag">New</span>
-        <span>We are currently onboarding high-growth brands &amp; luxury creators! Schedule Discovery Call →</span>
-      </div>
-      <div class="marquee-item">
-        <span class="marquee-tag">AI 2.0</span>
-        <span>WhatsApp Business AI Agent System with 24/7 autonomous closing now live.</span>
-      </div>
-      <div class="marquee-item">
-        <span class="marquee-tag">Cinema</span>
-        <span>Hollywood-grade 4K Wedding &amp; Brand films with 8.4X engagement lift.</span>
-      </div>
-      <div class="marquee-item">
-        <span class="marquee-tag">New</span>
-        <span>We are currently onboarding high-growth brands &amp; luxury creators! Schedule Discovery Call →</span>
-      </div>
-      <div class="marquee-item">
-        <span class="marquee-tag">AI 2.0</span>
-        <span>WhatsApp Business AI Agent System with 24/7 autonomous closing now live.</span>
-      </div>
-    </div>
-  </div>
-
   <header class="site-header" id="siteHeader">
     <div class="navbar-container wrap">
       <a href="index.html" class="navbar-brand-logo" id="navBrandLogo" aria-label="BrandBhai Home">
@@ -2132,10 +2115,6 @@
 
   <main>
     <section class="hero-section wrap">
-      <div class="hero-eyebrow">
-        <span class="pulse-dot"></span>
-        <span>Multidisciplinary Digital &amp; Creative Powerhouse</span>
-      </div>
 
       <div class="hero-headline-flow">
         <div class="hero-row">
@@ -2332,11 +2311,6 @@
     <section class="clients-section" id="showcase">
       <div class="clients-header">
         <div class="clients-title-wrap">
-          <span class="clients-title-icon">
-            <svg viewBox="0 0 100 100" fill="none">
-              <path d="M50 10C27.9 10 10 27.9 10 50s17.9 40 40 40 40-17.9 40-40S72.1 10 50 10zm0 22c9.9 0 18 8.1 18 18s-8.1 18-18 18-18-8.1-18-18 8.1-18 18-18z" fill="currentColor"/>
-            </svg>
-          </span>
           <h2 class="clients-title-text">Our Happy Clients</h2>
         </div>
       </div>

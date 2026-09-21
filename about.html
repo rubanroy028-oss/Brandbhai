@@ -1372,19 +1372,36 @@
       font-size: 13.5px;
       color: var(--color-title);
       outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .footer-newsletter-input:focus {
+      border-color: var(--color-title);
+      box-shadow: 0 0 0 2px rgba(24, 24, 24, 0.08);
     }
 
     .footer-newsletter-btn {
       padding: 11px 18px;
       border-radius: var(--radius-sm);
       background: var(--color-title);
-      color: #FFFFFF;
+      color: var(--bg);
       font-weight: 700;
-      font-size: 14px;
-      transition: background-color 0.2s ease;
+      font-size: 16px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-title);
+      cursor: pointer;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     }
 
-    .footer-newsletter-btn:hover { background: var(--mp-coral); }
+    .footer-newsletter-btn:hover {
+      background: var(--mp-coral);
+      border-color: var(--mp-coral);
+      color: #FFFFFF;
+      transform: translateX(2px);
+    }
 
     .footer-bottom-bar {
       display: flex;
@@ -1947,63 +1964,7 @@
       </div>
     </section>
 
-    <section class="team-section wrap">
-      <div class="section-head-bar">
-        <div>
-          <span class="section-eyebrow">The Squad Behind the Magic</span>
-          <h2 class="section-title-large">Meet Our Leadership</h2>
-        </div>
-        <p style="max-width: 400px; color: var(--color-body); font-size: 15px;">
-          An interdisciplinary collective of AI engineers, cinematographers, performance marketers, and design architects.
-        </p>
-      </div>
-
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Creative Director">
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Priya Varma</h3>
-            <div class="team-role">Head of Visual &amp; Brand Strategy</div>
-            <p class="team-desc">Former luxury art director specializing in editorial typography and brand identity systems.</p>
-          </div>
-        </div>
-
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="AI Architect">
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Rohan Mehta</h3>
-            <div class="team-role">Chief AI Architect</div>
-            <p class="team-desc">Ex-Silicon Valley ML researcher building autonomous WhatsApp conversational engines and CRM pipelines.</p>
-          </div>
-        </div>
-
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Director of Cinema">
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Sameer Sen</h3>
-            <div class="team-role">Director of Cinema &amp; FPV Aerials</div>
-            <p class="team-desc">Award-winning royal wedding &amp; commercial filmmaker with 12+ years on ARRI &amp; RED cameras.</p>
-          </div>
-        </div>
-
-        <div class="team-card">
-          <div class="team-img-wrap">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Growth Lead">
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Aditya Roy</h3>
-            <div class="team-role">Head of Performance &amp; Media Buying</div>
-            <p class="team-desc">Managed over ₹40Cr in paid acquisition across Meta &amp; Google with consistent 8X+ ROAS funnels.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <section class="timeline-section wrap">
       <div class="section-head-bar">
